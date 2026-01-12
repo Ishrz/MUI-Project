@@ -6,7 +6,8 @@ import Section from "./components/Section";
 export const MyButton=styled(Button)({
         backgroundColor:'#1f2f5f',
         color:'red',
-        '&:hover':{backgroundColor:'pink'},
+        '&:hover':{backgroundColor:'pink', scale:'0.85'},
+        '&:active':{backgroundColor:'red'},
         padding:'20px',
         borderRadius:'50px',
     })
@@ -21,7 +22,8 @@ const App = () => {
     <div className="text-white/40 bg-black w-full h-screen">
       <h1>Home</h1>
       <Button
-        variant="contained"
+        variant="outlined"
+        sx={{backgroundColor:'gray', border:'black', color:'black'}}
         
       >
         Button
