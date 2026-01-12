@@ -1,10 +1,20 @@
 import React from 'react'
 import {Box} from '@mui/material'
+import FeedCard from './FeedCard'
 const Feed = () => {
   return (
-    <Box bgcolor={'blue'} flex={'4'}>
+    <Box sx={
+      {display:'flex', 
+      margin:'1rem',
+      flexDirection:'column',
+      gap:'2rem'
+    }
+      } flex={'4'}>
 
-      Feed
+      <FeedCard/>
+      <FeedCard/>
+      <FeedCard/>
+      <FeedCard/>
     </Box>
   )
 }

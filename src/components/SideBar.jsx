@@ -33,7 +33,9 @@ export default function SideBar() {
   };
 
   return (
-    <Box flex={1} sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    
+    <Box  display={{xs:'none' ,sm:'block'}}  flex={1} sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+      <Box position={'sticky'} top={70} left={0}>
       <List component="nav" aria-label="main mailbox folders">
         <ListItemButton
           selected={selectedIndex === 0}
@@ -85,6 +87,7 @@ export default function SideBar() {
         />
       </ListItem>
       </List>
+    </Box>
     </Box>
   );
 }
