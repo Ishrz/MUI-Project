@@ -1,5 +1,6 @@
 import "./App.css";
-import Section from "./components/Section";
+import Navbar from "./components/Navbar";
+import SideBar from './components/SideBar'
 
 
 
@@ -9,10 +10,15 @@ const App = () => {
 
 
   return (
-    <div className="text-white/40 bg-black w-full h-screen">
-   
+    <div className="">
+      <Navbar/>
+      <SideBar>
+        Hello
+      </SideBar>
     </div>
-  );
-};
+  
+  )
+
+}
 
 export default App;
