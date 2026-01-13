@@ -9,24 +9,15 @@ import Stack from '@mui/material/Stack';
 
 
 const App = () => {
-
-     
-
-
   return (
     <div className="">
       <Navbar/>
       <Stack direction={'row'} justifyContent={"space-between"}>
-      <SideBar >
-        Hello
-      </SideBar>
+      <SideBar/>
       <Feed/>
       <RightBar/>
       </Stack>
     </div>
-  
   )
-
 }
-
 export default App;
