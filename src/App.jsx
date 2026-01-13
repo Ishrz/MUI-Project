@@ -10,10 +10,6 @@ import Stack from '@mui/material/Stack';
 
 
 const App = () => {
-
-     
-
-
   return (
     <div className="">
       <Navbar/>
@@ -26,9 +22,6 @@ const App = () => {
       </Stack>
       <Footer/>
     </div>
-  
   )
-
 }
-
 export default App;
